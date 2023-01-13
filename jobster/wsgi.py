@@ -1,5 +1,5 @@
 """
-WSGI config for jobster project.
+WSGI config for mpower project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

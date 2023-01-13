@@ -17,10 +17,19 @@
         <link rel="stylesheet" href="{% static 'css/animate.css' %}">
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
-        <title>mPower Home</title>
+        <title>mpower Home</title>
     </head>
    
     <body>
+        {% if messages %}
+        {% for message in messages %}
+         {% if message.tags %}  
+         <script>alert('{{ message }}')</script>
+        {% endif %}
+
+        {% endfor %}
+
+        {% endif %}
         {% include "indexheader.html" %}
 
         <section class="pxp-hero vh-100" style="background-color: var(--pxpMainColorLight);">
@@ -68,7 +77,7 @@
                         </div>
                         <div class="d-none d-xl-block col-xl-5 position-relative">
                             <div class="pxp-hero-cards-container pxp-animate-cards pxp-mouse-move" data-speed="160">
-                                <div class="pxp-hero-card pxp-cover pxp-cover-top" style="background-image: url('https://track2traininginstitute.files.wordpress.com/2020/08/pexels-photo-935756.jpeg');"></div>
+                                <div class="pxp-hero-card pxp-cover pxp-cover-top" style="background-image: url('');"></div>
                                 <div class="pxp-hero-card-dark"></div>
                                 <div class="pxp-hero-card-light"></div>
                             </div>
@@ -107,16 +116,16 @@
                     <div class="row pxp-pl-80">
                         <div class="col-12 col-xl-6">
                             <div class="pxp-hero-logos-carousel owl-carousel">
-                                <img src="{% static 'images/hero-logo-1.svg' %}" alt="Logo 1">
-                                <img src="{% static 'images/hero-logo-2.svg' %}" alt="Logo 2">
-                                <img src="{% static 'images/hero-logo-3.svg' %}" alt="Logo 3">
-                                <img src="{% static 'images/hero-logo-4.svg' %}" alt="Logo 4">
-                                <img src="{% static 'images/hero-logo-5.svg' %}" alt="Logo 5">
-                                <img src="{% static 'images/hero-logo-6.svg' %}" alt="Logo 6">
-                                <img src="{% static 'images/hero-logo-7.svg' %}" alt="Logo 7">
-                                <img src="{% static 'images/hero-logo-1.svg' %}" alt="Logo 8">
-                                <img src="{% static 'images/hero-logo-2.svg' %}" alt="Logo 9">
-                                <img src="{% static 'images/hero-logo-3.svg' %}" alt="Logo 10">
+                                <img src="" alt="Logo 2">
+                                <img src="" alt="Logo 3">
+                                <img src="" alt="Logo 1">
+                                <img src="" alt="Logo 4">
+                                <img src="" alt="Logo 5">
+                                <img src="" alt="Logo 6">
+                                <img src="" alt="Logo 7">
+                                <img src="" alt="Logo 8">
+                                <img src="" alt="Logo 9">
+                                <img src="" alt="Logo 10">
                             </div>
                         </div>
                     </div>
@@ -232,7 +241,7 @@
                                     <div class="pxp-jobs-card-1-date pxp-text-light">3 days ago by</div>
                                     <a href="single-company-1.html" class="pxp-jobs-card-1-company">Artistre Studio</a>
                                 </div>
-                                <a href="single-company-1.html" class="pxp-jobs-card-1-company-logo" style="background-image: url(/static/images/company-logo-1.png);"></a>
+                                <a href="single-company-1.html" class="pxp-jobs-card-1-company-logo" style="background-image: url();"></a>
                             </div>
                         </div>
                     </div>
@@ -256,7 +265,7 @@
                                     <div class="pxp-jobs-card-1-date pxp-text-light">3 days ago by</div>
                                     <a href="single-company-1.html" class="pxp-jobs-card-1-company">Craftgenics</a>
                                 </div>
-                                <a href="single-company-1.html" class="pxp-jobs-card-1-company-logo" style="background-image: url(/static/images/company-logo-2.png);"></a>
+                                <a href="single-company-1.html" class="pxp-jobs-card-1-company-logo" style="background-image: url();"></a>
                             </div>
                         </div>
                     </div>
@@ -280,7 +289,7 @@
                                     <div class="pxp-jobs-card-1-date pxp-text-light">3 days ago by</div>
                                     <a href="single-company-1.html" class="pxp-jobs-card-1-company">Illuminate Studio</a>
                                 </div>
-                                <a href="single-company-1.html" class="pxp-jobs-card-1-company-logo" style="background-image: url(/static/images/company-logo-3.png);"></a>
+                                <a href="single-company-1.html" class="pxp-jobs-card-1-company-logo" style="background-image: url();"></a>
                             </div>
                         </div>
                     </div>
@@ -304,7 +313,7 @@
                                     <div class="pxp-jobs-card-1-date pxp-text-light">3 days ago by</div>
                                     <a href="single-company-1.html" class="pxp-jobs-card-1-company">Syspresoft</a>
                                 </div>
-                                <a href="single-company-1.html" class="pxp-jobs-card-1-company-logo" style="background-image: url(/static/images/company-logo-4.png);"></a>
+                                <a href="single-company-1.html" class="pxp-jobs-card-1-company-logo" style="background-image: url();"></a>
                             </div>
                         </div>
                     </div>
@@ -328,7 +337,7 @@
                                     <div class="pxp-jobs-card-1-date pxp-text-light">3 days ago by</div>
                                     <a href="single-company-1.html" class="pxp-jobs-card-1-company">Gramware</a>
                                 </div>
-                                <a href="single-company-1.html" class="pxp-jobs-card-1-company-logo" style="background-image: url(/static/images/company-logo-5.png);"></a>
+                                <a href="single-company-1.html" class="pxp-jobs-card-1-company-logo" style="background-image: url();"></a>
                             </div>
                         </div>
                     </div>
@@ -352,7 +361,7 @@
                                     <div class="pxp-jobs-card-1-date pxp-text-light">3 days ago by</div>
                                     <a href="single-company-1.html" class="pxp-jobs-card-1-company">Bitbytech</a>
                                 </div>
-                                <a href="single-company-1.html" class="pxp-jobs-card-1-company-logo" style="background-image: url(/static/images/company-logo-6.png);"></a>
+                                <a href="single-company-1.html" class="pxp-jobs-card-1-company-logo" style="background-image: url();"></a>
                             </div>
                         </div>
                     </div>
@@ -376,7 +385,7 @@
                                     <div class="pxp-jobs-card-1-date pxp-text-light">3 days ago by</div>
                                     <a href="single-company-1.html" class="pxp-jobs-card-1-company">CoderBotics</a>
                                 </div>
-                                <a href="single-company-1.html" class="pxp-jobs-card-1-company-logo" style="background-image: url(/static/images/company-logo-7.png);"></a>
+                                <a href="single-company-1.html" class="pxp-jobs-card-1-company-logo" style="background-image: url();"></a>
                             </div>
                         </div>
                     </div>
@@ -400,7 +409,7 @@
                                     <div class="pxp-jobs-card-1-date pxp-text-light">3 days ago by</div>
                                     <a href="single-company-1.html" class="pxp-jobs-card-1-company">Artistre Studio</a>
                                 </div>
-                                <a href="single-company-1.html" class="pxp-jobs-card-1-company-logo" style="background-image: url(/static/images/company-logo-1.png);"></a>
+                                <a href="single-company-1.html" class="pxp-jobs-card-1-company-logo" style="background-image: url();"></a>
                             </div>
                         </div>
                     </div>
@@ -421,7 +430,7 @@
                     <div class="col-md-6 col-xl-4 col-xxl-3 pxp-companies-card-1-container">
                         <div class="pxp-companies-card-1 pxp-has-border">
                             <div class="pxp-companies-card-1-top">
-                                <a href="single-company-1.html" class="pxp-companies-card-1-company-logo" style="background-image: url(/static/images/company-logo-1.png);"></a>
+                                <a href="single-company-1.html" class="pxp-companies-card-1-company-logo" style="background-image: url();"></a>
                                 <a href="single-company-1.html" class="pxp-companies-card-1-company-name">Artistre Studio</a>
                                 <div class="pxp-companies-card-1-company-description pxp-text-light">Is an American multinational computer software company. Incorporated in Delaware and headquartered in San Jose, California, it has historically specialized in software for the creation.</div>
                             </div>
@@ -433,7 +442,7 @@
                     <div class="col-md-6 col-xl-4 col-xxl-3 pxp-companies-card-1-container">
                         <div class="pxp-companies-card-1 pxp-has-border">
                             <div class="pxp-companies-card-1-top">
-                                <a href="single-company-1.html" class="pxp-companies-card-1-company-logo" style="background-image: url(/static/images/company-logo-7.png);"></a>
+                                <a href="single-company-1.html" class="pxp-companies-card-1-company-logo" style="background-image: url();"></a>
                                 <a href="single-company-1.html" class="pxp-companies-card-1-company-name">CoderBotics</a>
                                 <div class="pxp-companies-card-1-company-description pxp-text-light">Is an American multinational computer software company. Incorporated in Delaware and headquartered in San Jose, California.</div>
                             </div>
@@ -445,7 +454,7 @@
                     <div class="col-md-6 col-xl-4 col-xxl-3 pxp-companies-card-1-container">
                         <div class="pxp-companies-card-1 pxp-has-border">
                             <div class="pxp-companies-card-1-top">
-                                <a href="single-company-1.html" class="pxp-companies-card-1-company-logo" style="background-image: url(/static/images/company-logo-4.png);"></a>
+                                <a href="single-company-1.html" class="pxp-companies-card-1-company-logo" style="background-image: url();"></a>
                                 <a href="single-company-1.html" class="pxp-companies-card-1-company-name">Syspresoft</a>
                                 <div class="pxp-companies-card-1-company-description pxp-text-light">Is an American multinational computer software company. Incorporated in Delaware and headquartered in San Jose, California, it has historically specialized in software for the creation.</div>
                             </div>
@@ -457,7 +466,7 @@
                     <div class="col-md-6 col-xl-4 col-xxl-3 pxp-companies-card-1-container">
                         <div class="pxp-companies-card-1 pxp-has-border">
                             <div class="pxp-companies-card-1-top">
-                                <a href="single-company-1.html" class="pxp-companies-card-1-company-logo" style="background-image: url(/static/images/company-logo-3.png);"></a>
+                                <a href="single-company-1.html" class="pxp-companies-card-1-company-logo" style="background-image: url();"></a>
                                 <a href="single-company-1.html" class="pxp-companies-card-1-company-name">Illuminate Studio</a>
                                 <div class="pxp-companies-card-1-company-description pxp-text-light">Is an American multinational computer software company. Incorporated in Delaware and headquartered in San Jose, California.</div>
                             </div>
@@ -483,7 +492,7 @@
                     <div class="col-md-6 col-xl-4 col-xxl-3">
                         <a href="jobs-list-1.html" class="pxp-cities-card-2">
                             <div class="pxp-cities-card-2-image-container">
-                                <div class="pxp-cities-card-2-image pxp-cover" style="background-image: url(/static/images/ph-medium.jpg);"></div>
+                                <div class="pxp-cities-card-2-image pxp-cover" style="background-image: url();"></div>
                             </div>
                             <div class="pxp-cities-card-2-info">
                                 <div class="pxp-cities-card-2-name">London, UK</div>
@@ -492,7 +501,7 @@
                         </a>
                         <a href="jobs-list-1.html" class="pxp-cities-card-2">
                             <div class="pxp-cities-card-2-image-container">
-                                <div class="pxp-cities-card-2-image pxp-cover" style="background-image: url(/static/images/ph-medium.jpg);"></div>
+                                <div class="pxp-cities-card-2-image pxp-cover" style="background-image: url();"></div>
                             </div>
                             <div class="pxp-cities-card-2-info">
                                 <div class="pxp-cities-card-2-name">San Francisco, CA</div>
@@ -503,7 +512,7 @@
                     <div class="col-md-6 col-xl-4 col-xxl-3">
                         <a href="jobs-list-1.html" class="pxp-cities-card-2 pxp-is-featured">
                             <div class="pxp-cities-card-2-image-container">
-                                <div class="pxp-cities-card-2-image pxp-cover" style="background-image: url(/static/images/ph-medium.jpg);"></div>
+                                <div class="pxp-cities-card-2-image pxp-cover" style="background-image: url();"></div>
                             </div>
                             <div class="pxp-cities-card-2-info">
                                 <div class="pxp-cities-card-2-name">Paris, France</div>
@@ -514,7 +523,7 @@
                     <div class="col-md-6 col-xl-4 col-xxl-3">
                         <a href="jobs-list-1.html" class="pxp-cities-card-2">
                             <div class="pxp-cities-card-2-image-container">
-                                <div class="pxp-cities-card-2-image pxp-cover" style="background-image: url(/static/images/ph-medium.jpg);"></div>
+                                <div class="pxp-cities-card-2-image pxp-cover" style="background-image: url();"></div>
                             </div>
                             <div class="pxp-cities-card-2-info">
                                 <div class="pxp-cities-card-2-name">San Francisco, CA</div>
@@ -523,7 +532,7 @@
                         </a>
                         <a href="jobs-list-1.html" class="pxp-cities-card-2">
                             <div class="pxp-cities-card-2-image-container">
-                                <div class="pxp-cities-card-2-image pxp-cover" style="background-image: url(/static/images/ph-medium.jpg);"></div>
+                                <div class="pxp-cities-card-2-image pxp-cover" style="background-image: url();"></div>
                             </div>
                             <div class="pxp-cities-card-2-info">
                                 <div class="pxp-cities-card-2-name">Los Angeles, CA</div>
@@ -534,7 +543,7 @@
                     <div class="col-md-6 col-xl-4 col-xxl-3">
                         <a href="jobs-list-1.html" class="pxp-cities-card-2">
                             <div class="pxp-cities-card-2-image-container">
-                                <div class="pxp-cities-card-2-image pxp-cover" style="background-image: url(/static/images/ph-medium.jpg);"></div>
+                                <div class="pxp-cities-card-2-image pxp-cover" style="background-image: url();"></div>
                             </div>
                             <div class="pxp-cities-card-2-info">
                                 <div class="pxp-cities-card-2-name">London, UK</div>
@@ -543,7 +552,7 @@
                         </a>
                         <a href="jobs-list-1.html" class="pxp-cities-card-2">
                             <div class="pxp-cities-card-2-image-container">
-                                <div class="pxp-cities-card-2-image pxp-cover" style="background-image: url(/static/images/ph-medium.jpg);"></div>
+                                <div class="pxp-cities-card-2-image pxp-cover" style="background-image: url();"></div>
                             </div>
                             <div class="pxp-cities-card-2-info">
                                 <div class="pxp-cities-card-2-name">San Francisco, CA</div>
@@ -564,7 +573,7 @@
                     <div class="col-md-9 col-lg-7 col-xl-6 col-xxl-5">
                         <div class="pxp-subscribe-1-container pxp-animate-in pxp-animate-in-top">
                             <div class="pxp-subscribe-1-image">
-                                <img src="{% static 'images/subscribe.png' %}" alt="Stay Up to Date">
+                                <img src="" alt="Stay Up to Date">
                             </div>
                             <div class="pxp-subscribe-1-form">
                                 <form>
@@ -585,16 +594,24 @@
         <div class="modal fade pxp-user-modal" id="pxp-signin-modal" aria-hidden="true" aria-labelledby="signinModal" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-header" style="padding: 20px">
+                        {% comment %} <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> {% endcomment %}
+                        <div class="tabs activer" id="tab01">
+                            <h6 class="font-weight-bold" style="margin-bottom: 0px !important">Candidate</h6>
+                        </div>
+                        <div class="tabs" id="tab02">
+                            <h6 class="text-muted" style="margin-bottom: 0px !important">Employer</h6>
+                        </div>
                     </div>
                     <div class="modal-body">
-                        <div class="pxp-user-modal-fig text-center">
-                            <img src="{% static 'images/signin-fig.png' %}" alt="Sign in">
-                        </div>
+                        <fieldset class="show fieldvals" id="tab011">
+                            <div class="pxp-user-modal-fig text-center">
+                                <img src="" alt="Sign in">
+                            </div>
                         <h5 class="modal-title text-center mt-4" id="signinModal">Candidate Sign-In</h5>
-                        <form class="mt-4" method="post" action="{% url 'main:index' %}">
+                        <form class="mt-4" method="post">
                             {% csrf_token %}
+                            <input value="candidate" style="display: none" name="user"/>
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control" name="c_email" id="pxp-signin-email" placeholder="Email address">
                                 <label for="pxp-signin-email">Email address</label>
@@ -605,15 +622,44 @@
                                 <label for="pxp-signin-password">Password</label>
                                 <span class="fa fa-lock"></span>
                             </div>
-                            <!-- <a href="#" class="btn rounded-pill pxp-modal-cta">Continue</a> -->
-                            <input type="submit" value="Log in" class="btn rounded-pill pxp-modal-cta">
+                            <input type="submit" value="Sign in" class="btn rounded-pill pxp-modal-cta" style="width: 100%">
                             <div class="mt-4 text-center pxp-modal-small">
                                 <a href="#" class="pxp-modal-link">Forgot password</a>
                             </div>
                             <div class="mt-4 text-center pxp-modal-small">
-                                New to mPower? <a role="button" class="" data-bs-target="#pxp-signup-modal" data-bs-toggle="modal" data-bs-dismiss="modal">Create an account</a>
+                                New to mpower? <a role="button" class="" data-bs-target="#pxp-signup-modal" data-bs-toggle="modal" data-bs-dismiss="modal">Create an account</a>
                             </div>
                         </form>
+                    </fieldset>
+                    </div>
+                    <div class="modal-body">
+                        <fieldset id="tab021" class="fieldvals">
+                        <div class="pxp-user-modal-fig text-center">
+                            <img src="" alt="Sign in">
+                        </div>
+                        <h5 class="modal-title text-center mt-4" id="empModal">Employer Sign-In</h5>
+                        <form class="mt-4" method="post">
+                            {% csrf_token %}
+                            <input value="employer" style="display: none" name="user"/>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="pxp-signin-email" placeholder="Email address">
+                                <label for="pxp-signin-email">Email address</label>
+                                <span class="fa fa-envelope-o"></span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="pxp-signin-password" placeholder="Password">
+                                <label for="pxp-signin-password">Password</label>
+                                <span class="fa fa-lock"></span>
+                            </div>
+                            <input type="submit" value="Log in" class="btn rounded-pill pxp-modal-cta" style="width: 100%">
+                            <div class="mt-4 text-center pxp-modal-small">
+                                <a href="#" class="pxp-modal-link">Forgot password</a>
+                            </div>
+                            <div class="mt-4 text-center pxp-modal-small">
+                                New to mpower? <a role="button" class="" data-bs-target="#pxp-signup-modal" data-bs-toggle="modal" data-bs-dismiss="modal">Create an account</a>
+                            </div>
+                        </form>
+                    </fieldset>
                     </div>
                 </div>
             </div>
@@ -627,7 +673,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="pxp-user-modal-fig text-center">
-                            <img src="{% static 'images/signin-fig.png' %}" alt="Sign in">
+                            <img src="" alt="Sign in">
                         </div>
                         <h5 class="modal-title text-center mt-4" id="empModal">Employer Sign-In</h5>
                         <form class="mt-4" >
@@ -647,7 +693,7 @@
                                 <a href="#" class="pxp-modal-link">Forgot password</a>
                             </div>
                             <div class="mt-4 text-center pxp-modal-small">
-                                New to mPower? <a role="button" class="" data-bs-target="#pxp-signup-modal" data-bs-toggle="modal" data-bs-dismiss="modal">Create an account</a>
+                                New to mpower? <a role="button" class="" data-bs-target="#pxp-signup-modal" data-bs-toggle="modal" data-bs-dismiss="modal">Create an account</a>
                             </div>
                         </form>
                     </div>
@@ -658,30 +704,86 @@
         <div class="modal fade pxp-user-modal" id="pxp-signup-modal" aria-hidden="true" aria-labelledby="signupModal" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-header" style="padding: 20px; padding-bottom: 0px">
+                        {% comment %} <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> {% endcomment %}
+                        <div class="tabs2 activer2" id="tab03">
+                            <h6 class="font-weight-bold" style="margin-bottom: 0px !important">Candidate</h6>
+                        </div>
+                        <div class="tabs2" id="tab04">
+                            <h6 class="text-muted" style="margin-bottom: 0px !important">Employer</h6>
+                        </div>
                     </div>
                     <div class="modal-body">
+                        <main id="tab031" class="fieldvals show">
                         <div class="pxp-user-modal-fig text-center">
-                            <img src="{% static 'images/signup-fig.png' %}" alt="Sign up">
+                            <img src="" alt="Sign up">
                         </div>
                         <h5 class="modal-title text-center mt-4" id="signupModal">Create an account</h5>
-                        <form class="mt-4">
+                        <form class="mt-4" method="post" action="{% url 'main:register' %}">
+                            {% csrf_token %}
+                            <input value="candidate" style="display: none" name="user"/>
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="pxp-signup-email" placeholder="Email address">
+                                <input type="text" class="form-control" id="pxp-signin-page-email" name="name" placeholder="Name">
+                                <label for="pxp-signin-page-email">Name</label>
+                                <span class="fa fa-user"></span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="pxp-signup-email" placeholder="Email address" name="email">
                                 <label for="pxp-signup-email">Email address</label>
                                 <span class="fa fa-envelope-o"></span>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="pxp-signup-password" placeholder="Create password">
+                                <input type="password" class="form-control" id="pxp-signup-password" placeholder="Create password" name="password">
                                 <label for="pxp-signup-password">Create password</label>
                                 <span class="fa fa-lock"></span>
                             </div>
-                            <a href="#" class="btn rounded-pill pxp-modal-cta">Continue</a>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="pxp-signup-password" placeholder="Confirm password" name="conpass">
+                                <label for="pxp-signup-password">Confirm password</label>
+                                <span class="fa fa-lock"></span>
+                            </div>
+                            <input type="submit" value="Sign Up" class="btn rounded-pill pxp-modal-cta" style="width: 100%">
                             <div class="mt-4 text-center pxp-modal-small">
                                 Already have an account? <a role="button" class="" data-bs-target="#pxp-signin-modal" data-bs-toggle="modal">Sign in</a>
                             </div>
                         </form>
+                    </main>
+                    </div>
+                    <div class="modal-body">
+                        <main id="tab041" class="fieldvals">
+                        <div class="pxp-user-modal-fig text-center">
+                            <img src="" alt="Sign up">
+                        </div>
+                        <h5 class="modal-title text-center mt-4" id="signupModal">Create an account</h5>
+                        <form class="mt-4" method="post" action="{% url 'main:register' %}">
+                            {% csrf_token %}
+                            <input value="employer" style="display: none" name="user" />
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="pxp-signin-page-email" name="name" placeholder="Company Name">
+                                <label for="pxp-signin-page-email">Company Name</label>
+                                <span class="fa fa-user"></span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="pxp-signup-email" placeholder="Email address" name="email">
+                                <label for="pxp-signup-email">Email address</label>
+                                <span class="fa fa-envelope-o"></span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="pxp-signup-password" placeholder="Create password" name="password">
+                                <label for="pxp-signup-password">Create password</label>
+                                <span class="fa fa-lock"></span>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control" id="pxp-signup-password" placeholder="Confirm password" name="conpass">
+                                <label for="pxp-signup-password">Confirm password</label>
+                                <span class="fa fa-lock"></span>
+                            </div>
+                            <input type="submit" value="Sign Up" class="btn rounded-pill pxp-modal-cta" style="width: 100%">
+                            <div class="mt-4 text-center pxp-modal-small">
+                                Already have an account? <a role="button" class="" data-bs-target="#pxp-signin-modal" data-bs-toggle="modal">Sign in</a>
+                            </div>
+                        </form>
+                    </main>
                     </div>
                 </div>
             </div>
@@ -692,6 +794,67 @@
         <script src="{% static 'js/owl.carousel.min.js' %}"></script>
         <script src="{% static 'js/nav.js' %}"></script>
         <script src="{% static 'js/main.js' %}"></script>
+        <script>
+            $(".tabs").click(function(){
+    
+                $(".tabs").removeClass("activer");
+                $(".tabs h6").removeClass("font-weight-bold");    
+                $(".tabs h6").addClass("text-muted");    
+                $(this).children("h6").removeClass("text-muted");
+                $(this).children("h6").addClass("font-weight-bold");
+                $(this).addClass("activer");
+            
+                current_fs = $(".activer");
+            
+                next_fs = $(this).attr('id');
+                next_fs = "#" + next_fs + "1";
+            
+                $("fieldset").removeClass("show");
+                $(next_fs).addClass("show");
+                
+                current_fs.animate({}, {
+                    step: function() {
+                        current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                        });
+                        next_fs.css({
+                            'display': 'block'
+                        });
+                    }
+                });
+            });
+            
+            $(".tabs2").click(function(){
+    
+                $(".tabs2").removeClass("activer2");
+                $(".tabs2 h6").removeClass("font-weight-bold");    
+                $(".tabs2 h6").addClass("text-muted");    
+                $(this).children("h6").removeClass("text-muted");
+                $(this).children("h6").addClass("font-weight-bold");
+                $(this).addClass("activer2");
+            
+                current_fs = $(".activer2");
+            
+                next_fs = $(this).attr('id');
+                next_fs = "#" + next_fs + "1";
+            
+                $("main").removeClass("show");
+                $(next_fs).addClass("show");
+                
+                current_fs.animate({}, {
+                    step: function() {
+                        current_fs.css({
+                            'display': 'none',
+                            'position': 'relative'
+                        });
+                        next_fs.css({
+                            'display': 'block'
+                        });
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
 {% endblock %}

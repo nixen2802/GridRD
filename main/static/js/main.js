@@ -419,161 +419,161 @@
         });
     }
 
-    // Candidate dashboard charts
-    if ($('#pxp-candidate-dashboard-visits-chart').length > 0) {
-        var candidateVisitsChartElem = document.getElementById('pxp-candidate-dashboard-visits-chart').getContext('2d');
+    // // Candidate dashboard charts
+    // if ($('#pxp-candidate-dashboard-visits-chart').length > 0) {
+    //     var candidateVisitsChartElem = document.getElementById('pxp-candidate-dashboard-visits-chart').getContext('2d');
 
-        var gradient = candidateVisitsChartElem.createLinearGradient(0, 250, 0, 0);
-        gradient.addColorStop(0, 'rgba(255, 255, 255, 0)');
-        gradient.addColorStop(.5, 'rgba(0, 112, 201, 0.09)');
-        gradient.addColorStop(1, 'rgba(0, 112, 201, 0.12)');
+    //     var gradient = candidateVisitsChartElem.createLinearGradient(0, 250, 0, 0);
+    //     gradient.addColorStop(0, 'rgba(255, 255, 255, 0)');
+    //     gradient.addColorStop(.5, 'rgba(0, 112, 201, 0.09)');
+    //     gradient.addColorStop(1, 'rgba(0, 112, 201, 0.12)');
 
-        var candidateVisitsChart = new Chart(candidateVisitsChartElem, {
-            type: 'line',
-            data: {
-                labels: ['Oct 06', 'Oct 07', 'Oct 08', 'Oct 09', 'Oct 10', 'Oct 11', 'Oct 12'],
-                datasets: [{
-                    label: 'Visits',
-                    data: [12, 56, 34, 78, 38, 28, 54],
-                    borderWidth: 3,
-                    borderColor: 'rgba(0, 112, 201, 1)',
-                    pointBackgroundColor: 'rgba(255, 255, 255, 0)',
-                    pointHoverBackgroundColor: 'rgba(255, 255, 255, 1)',
-                    pointBorderColor: 'rgba(66, 133, 244, 0)',
-                    pointHoverBorderColor: 'rgba(0, 112, 201, 1)',
-                    pointBorderWidth: 10,
-                    pointHoverBorderWidth: 3,
-                    pointHitRadius: 20,
-                    cubicInterpolationMode: 'monotone',
-                    fill: true,
-                    backgroundColor: gradient
-                }]
-            },
-            options: {
-                scales: {
-                    xAxes: [{
-                        ticks: {
-                            fontColor: 'rgba(153, 153, 153, 1)',
-                            maxTicksLimit: 7,
-                            maxRotation: 0
-                        },
-                        gridLines: {
-                            zeroLineColor: 'rgba(232, 232, 232, 1)',
-                            drawOnChartArea: false,
-                        },
-                    }],
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true,
-                            fontColor: 'rgba(153, 153, 153, 1)',
-                            callback: function(value, index, values) {
-                                if (Math.floor(value) === value) {
-                                    return value;
-                                }
-                            }
-                        },
-                        gridLines: {
-                            zeroLineColor: 'rgba(232, 232, 232, 0)',
-                        },
-                    }],
-                },
-                responsive: true,
-                tooltips: {
-                    backgroundColor: 'rgba(0, 39, 69, 1)',
-                    cornerRadius: 7,
-                    mode: 'index',
-                    intersect: false,
-                    displayColors: false,
-                    xPadding: 10,
-                    yPadding: 10,
-                    titleFontColor: 'rgba(255, 255, 255, .7)',
-                    bodyFontColor: 'rgba(255, 255, 255, 1)',
-                    titleFontStyle: 'normal',
-                    bodyFontStyle: 'bold',
-                },
-                legend: {
-                    display: false,
-                }
-            }
-        });
-    }
-    if ($('#pxp-candidate-dashboard-app-chart').length > 0) {
-        var candidateAppChartElem = document.getElementById('pxp-candidate-dashboard-app-chart').getContext('2d');
+    //     var candidateVisitsChart = new Chart(candidateVisitsChartElem, {
+    //         type: 'line',
+    //         data: {
+    //             labels: ['Oct 06', 'Oct 07', 'Oct 08', 'Oct 09', 'Oct 10', 'Oct 11', 'Oct 12'],
+    //             datasets: [{
+    //                 label: 'Visits',
+    //                 data: [12, 56, 34, 78, 38, 28, 54],
+    //                 borderWidth: 3,
+    //                 borderColor: 'rgba(0, 112, 201, 1)',
+    //                 pointBackgroundColor: 'rgba(255, 255, 255, 0)',
+    //                 pointHoverBackgroundColor: 'rgba(255, 255, 255, 1)',
+    //                 pointBorderColor: 'rgba(66, 133, 244, 0)',
+    //                 pointHoverBorderColor: 'rgba(0, 112, 201, 1)',
+    //                 pointBorderWidth: 10,
+    //                 pointHoverBorderWidth: 3,
+    //                 pointHitRadius: 20,
+    //                 cubicInterpolationMode: 'monotone',
+    //                 fill: true,
+    //                 backgroundColor: gradient
+    //             }]
+    //         },
+    //         options: {
+    //             scales: {
+    //                 xAxes: [{
+    //                     ticks: {
+    //                         fontColor: 'rgba(153, 153, 153, 1)',
+    //                         maxTicksLimit: 7,
+    //                         maxRotation: 0
+    //                     },
+    //                     gridLines: {
+    //                         zeroLineColor: 'rgba(232, 232, 232, 1)',
+    //                         drawOnChartArea: false,
+    //                     },
+    //                 }],
+    //                 yAxes: [{
+    //                     ticks: {
+    //                         beginAtZero: true,
+    //                         fontColor: 'rgba(153, 153, 153, 1)',
+    //                         callback: function(value, index, values) {
+    //                             if (Math.floor(value) === value) {
+    //                                 return value;
+    //                             }
+    //                         }
+    //                     },
+    //                     gridLines: {
+    //                         zeroLineColor: 'rgba(232, 232, 232, 0)',
+    //                     },
+    //                 }],
+    //             },
+    //             responsive: true,
+    //             tooltips: {
+    //                 backgroundColor: 'rgba(0, 39, 69, 1)',
+    //                 cornerRadius: 7,
+    //                 mode: 'index',
+    //                 intersect: false,
+    //                 displayColors: false,
+    //                 xPadding: 10,
+    //                 yPadding: 10,
+    //                 titleFontColor: 'rgba(255, 255, 255, .7)',
+    //                 bodyFontColor: 'rgba(255, 255, 255, 1)',
+    //                 titleFontStyle: 'normal',
+    //                 bodyFontStyle: 'bold',
+    //             },
+    //             legend: {
+    //                 display: false,
+    //             }
+    //         }
+    //     });
+    // }
+    // if ($('#pxp-candidate-dashboard-app-chart').length > 0) {
+    //     var candidateAppChartElem = document.getElementById('pxp-candidate-dashboard-app-chart').getContext('2d');
 
-        var gradient = candidateVisitsChartElem.createLinearGradient(0, 250, 0, 0);
-        gradient.addColorStop(0, 'rgba(255, 255, 255, 0)');
-        gradient.addColorStop(.5, 'rgba(255, 168, 35, 0.09)');
-        gradient.addColorStop(1, 'rgba(255, 168, 35, 0.12)');
+    //     var gradient = candidateVisitsChartElem.createLinearGradient(0, 250, 0, 0);
+    //     gradient.addColorStop(0, 'rgba(255, 255, 255, 0)');
+    //     gradient.addColorStop(.5, 'rgba(255, 168, 35, 0.09)');
+    //     gradient.addColorStop(1, 'rgba(255, 168, 35, 0.12)');
 
-        var candidateAppChart = new Chart(candidateAppChartElem, {
-            type: 'line',
-            data: {
-                labels: ['Oct 06', 'Oct 07', 'Oct 08', 'Oct 09', 'Oct 10', 'Oct 11', 'Oct 12'],
-                datasets: [{
-                    label: 'Applications',
-                    data: [43, 81, 72, 85, 42, 65, 80],
-                    borderWidth: 3,
-                    borderColor: 'rgba(255, 168, 35, 1)',
-                    pointBackgroundColor: 'rgba(255, 255, 255, 0)',
-                    pointHoverBackgroundColor: 'rgba(255, 255, 255, 1)',
-                    pointBorderColor: 'rgba(66, 133, 244, 0)',
-                    pointHoverBorderColor: 'rgba(255, 168, 35, 1)',
-                    pointBorderWidth: 10,
-                    pointHoverBorderWidth: 3,
-                    pointHitRadius: 20,
-                    cubicInterpolationMode: 'monotone',
-                    fill: true,
-                    backgroundColor: gradient
-                }]
-            },
-            options: {
-                scales: {
-                    xAxes: [{
-                        ticks: {
-                            fontColor: 'rgba(153, 153, 153, 1)',
-                            maxTicksLimit: 7,
-                            maxRotation: 0
-                        },
-                        gridLines: {
-                            zeroLineColor: 'rgba(232, 232, 232, 1)',
-                            drawOnChartArea: false,
-                        },
-                    }],
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true,
-                            fontColor: 'rgba(153, 153, 153, 1)',
-                            callback: function(value, index, values) {
-                                if (Math.floor(value) === value) {
-                                    return value;
-                                }
-                            }
-                        },
-                        gridLines: {
-                            zeroLineColor: 'rgba(232, 232, 232, 0)',
-                        },
-                    }],
-                },
-                responsive: true,
-                tooltips: {
-                    backgroundColor: 'rgba(0, 39, 69, 1)',
-                    cornerRadius: 7,
-                    mode: 'index',
-                    intersect: false,
-                    displayColors: false,
-                    xPadding: 10,
-                    yPadding: 10,
-                    titleFontColor: 'rgba(255, 255, 255, .7)',
-                    bodyFontColor: 'rgba(255, 255, 255, 1)',
-                    titleFontStyle: 'normal',
-                    bodyFontStyle: 'bold',
-                },
-                legend: {
-                    display: false,
-                }
-            }
-        });
-    }
+    //     var candidateAppChart = new Chart(candidateAppChartElem, {
+    //         type: 'line',
+    //         data: {
+    //             labels: ['Oct 06', 'Oct 07', 'Oct 08', 'Oct 09', 'Oct 10', 'Oct 11', 'Oct 12'],
+    //             datasets: [{
+    //                 label: 'Applications',
+    //                 data: [43, 81, 72, 85, 42, 65, 80],
+    //                 borderWidth: 3,
+    //                 borderColor: 'rgba(255, 168, 35, 1)',
+    //                 pointBackgroundColor: 'rgba(255, 255, 255, 0)',
+    //                 pointHoverBackgroundColor: 'rgba(255, 255, 255, 1)',
+    //                 pointBorderColor: 'rgba(66, 133, 244, 0)',
+    //                 pointHoverBorderColor: 'rgba(255, 168, 35, 1)',
+    //                 pointBorderWidth: 10,
+    //                 pointHoverBorderWidth: 3,
+    //                 pointHitRadius: 20,
+    //                 cubicInterpolationMode: 'monotone',
+    //                 fill: true,
+    //                 backgroundColor: gradient
+    //             }]
+    //         },
+    //         options: {
+    //             scales: {
+    //                 xAxes: [{
+    //                     ticks: {
+    //                         fontColor: 'rgba(153, 153, 153, 1)',
+    //                         maxTicksLimit: 7,
+    //                         maxRotation: 0
+    //                     },
+    //                     gridLines: {
+    //                         zeroLineColor: 'rgba(232, 232, 232, 1)',
+    //                         drawOnChartArea: false,
+    //                     },
+    //                 }],
+    //                 yAxes: [{
+    //                     ticks: {
+    //                         beginAtZero: true,
+    //                         fontColor: 'rgba(153, 153, 153, 1)',
+    //                         callback: function(value, index, values) {
+    //                             if (Math.floor(value) === value) {
+    //                                 return value;
+    //                             }
+    //                         }
+    //                     },
+    //                     gridLines: {
+    //                         zeroLineColor: 'rgba(232, 232, 232, 0)',
+    //                     },
+    //                 }],
+    //             },
+    //             responsive: true,
+    //             tooltips: {
+    //                 backgroundColor: 'rgba(0, 39, 69, 1)',
+    //                 cornerRadius: 7,
+    //                 mode: 'index',
+    //                 intersect: false,
+    //                 displayColors: false,
+    //                 xPadding: 10,
+    //                 yPadding: 10,
+    //                 titleFontColor: 'rgba(255, 255, 255, .7)',
+    //                 bodyFontColor: 'rgba(255, 255, 255, 1)',
+    //                 titleFontStyle: 'normal',
+    //                 bodyFontStyle: 'bold',
+    //             },
+    //             legend: {
+    //                 display: false,
+    //             }
+    //         }
+    //     });
+    // }
 
     // Upload company cover photo and logo
     if ($('#pxp-company-cover-choose-file').length > 0) {
@@ -675,4 +675,101 @@
     $('.pxp-dashboard-inbox-messages-close-btn').on('click', function() {
         $('.pxp-dashboard-inbox-messages-container').removeClass('pxp-show');
     });
+
+    //Multi step sign up form
+    let step = document.getElementsByClassName('step');
+    let prevBtn = document.getElementById('prev-btn');
+    let nextBtn = document.getElementById('next-btn');
+    let submitBtn = document.getElementById('submit-btn');
+    let form = document.getElementsByTagName('form')[0];
+    let preloader = document.getElementById('preloader-wrapper');
+    let bodyElement = document.querySelector('body');
+    let succcessDiv = document.getElementById('success');
+    let current_step = 0;
+    let stepCount = 4;
+    step[current_step].classList.add('d-block');
+    if (current_step == 0) {
+        prevBtn.classList.add('d-none');
+        submitBtn.classList.add('d-none');
+        nextBtn.classList.add('d-inline-block');
+    }
+    const progress = (value) => {
+        document.getElementsByClassName('progress-bar')[0].style.width = `${value}%`;
+    }
+    nextBtn.addEventListener('click', () => {
+        current_step++;
+        let previous_step = current_step - 1;
+        if ((current_step > 0) && (current_step <= stepCount)) {
+            prevBtn.classList.remove('d-none');
+            prevBtn.classList.add('d-inline-block');
+            step[current_step].classList.remove('d-none');
+            step[current_step].classList.add('d-block');
+            step[previous_step].classList.remove('d-block');
+            step[previous_step].classList.add('d-none');
+            if (current_step == stepCount) {
+                submitBtn.classList.remove('d-none');
+                submitBtn.classList.add('d-inline-block');
+                nextBtn.classList.remove('d-inline-block');
+                nextBtn.classList.add('d-none');
+            }
+        } else {
+            if (current_step > stepCount) {
+                form.onsubmit = () => {
+                    return true
+                }
+            }
+        }
+        progress((100 / stepCount) * current_step);
+    });
+     
+     
+    prevBtn.addEventListener('click', () => {
+        if (current_step > 0) {
+            current_step--;
+            let previous_step = current_step + 1;
+            prevBtn.classList.add('d-none');
+            prevBtn.classList.add('d-inline-block');
+            step[current_step].classList.remove('d-none');
+            step[current_step].classList.add('d-block')
+            step[previous_step].classList.remove('d-block');
+            step[previous_step].classList.add('d-none');
+            if (current_step < stepCount) {
+                submitBtn.classList.remove('d-inline-block');
+                submitBtn.classList.add('d-none');
+                nextBtn.classList.remove('d-none');
+                nextBtn.classList.add('d-inline-block');
+                prevBtn.classList.remove('d-none');
+                prevBtn.classList.add('d-inline-block');
+            }
+        }
+     
+        if (current_step == 0) {
+            prevBtn.classList.remove('d-inline-block');
+            prevBtn.classList.add('d-none');
+        }
+        progress((100 / stepCount) * current_step);
+    });
+     
+     
+    submitBtn.addEventListener('click', () => {
+        preloader.classList.add('d-block');
+     
+        const timer = ms => new Promise(res => setTimeout(res, ms));
+     
+        timer(3000)
+            .then(() => {
+                bodyElement.classList.add('loaded');
+            }).then(() => {
+                step[stepCount].classList.remove('d-block');
+                step[stepCount].classList.add('d-none');
+                prevBtn.classList.remove('d-inline-block');
+                prevBtn.classList.add('d-none');
+                submitBtn.classList.remove('d-inline-block');
+                submitBtn.classList.add('d-none');
+                succcessDiv.classList.remove('d-none');
+                succcessDiv.classList.add('d-block');
+            })
+     
+    });
+
 })(jQuery);
